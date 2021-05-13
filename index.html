@@ -1,0 +1,45 @@
+<!-- 
+Team Members:
+ - Phillip Presuel: phillipp@csu.fullerton.edu
+ - Brian Chairez: bchairez@csu.fullerton.edu 
+ - Gangju Li:  ligangju@csu.fullerton.edu
+
+CPSC 254-01 Final Project
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            background-image: url('linux.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed text-white text-sm ml-2 mt-1 select-none">
+        <span class="text-2xl font-bold text-red-500">Score : <span><span id ="scoreEl">0</span>
+    </div>
+    <div class="fixed inset-0 flex items-center justify-center" id ="modalEl">
+        <div class="bg-red-600 max-w-lg w-full p-10 text-center">
+            <h1 class="text-6xl text-white font-bold leading-none ">Linux Goes Rogue</h1>
+            <br>
+            <h1 class="text-8xl text-white font-bold leading-none " id="bigScoreEl">0</h1>
+            <p class="text-2xl text-white text-black mb-4 p-5">Points</p>
+            <div>
+                <button class="bg-gray-700 text-white w-full py-3
+                rounded-full text-sm" id="startGameBtn">Start Game</button>
+            </div>
+            <p class="text-2xl text-white text-black mb-4 p-5">By: Phillip Presuel, Brian Chairez, and Gangju Li</p>
+        </div>
+    </div>
+    <canvas></canvas>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</html>
